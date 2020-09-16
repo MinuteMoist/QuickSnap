@@ -37,7 +37,7 @@ namespace CardGames.GameLogic
 		public Snap ()
 		{
 			_deck = new Deck ();
-			_gameTimer = SwinGame.CreateTimer();
+			-gameTimer = SwinGame.CreateTimer();
 		}
 
 		/// <summary>
@@ -113,7 +113,7 @@ namespace CardGames.GameLogic
 		/// </summary>
 		public void Update()
 		{
-			if (_gameTimer.Ticks > _flipTime)
+						if (_gameTimer.Ticks > _flipTime)
 			{
 				_gameTimer.Reset ();
 				FlipNextCard ();
